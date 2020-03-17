@@ -23,6 +23,8 @@
 		8FF2478C242145090089A09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF2478B242145090089A09F /* AppDelegate.swift */; };
 		8FF247952421450A0089A09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF247942421450A0089A09F /* Assets.xcassets */; };
 		8FF247982421450A0089A09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF247962421450A0089A09F /* LaunchScreen.storyboard */; };
+		B2B9DF342421869300E11ECF /* LocationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9DF332421869300E11ECF /* LocationWorker.swift */; };
+		B2B9DF3724218D5D00E11ECF /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9DF3624218D5D00E11ECF /* LocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,8 @@
 		8FF247972421450A0089A09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FF247992421450A0089A09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1206F15BE7C1C73B6450DF7 /* Pods-coronatrace-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coronatrace-ios.debug.xcconfig"; path = "Target Support Files/Pods-coronatrace-ios/Pods-coronatrace-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		B2B9DF332421869300E11ECF /* LocationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWorker.swift; sourceTree = "<group>"; };
+		B2B9DF3624218D5D00E11ECF /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		E290AEC3A4339DD45CCC5049 /* Pods-coronatrace-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coronatrace-ios.release.xcconfig"; path = "Target Support Files/Pods-coronatrace-ios/Pods-coronatrace-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +101,7 @@
 			children = (
 				8F34FD5C24214F8100C0F0F5 /* Generated */,
 				8F34FD31242149AE00C0F0F5 /* Dashboard */,
+				B2B9DF312421865D00E11ECF /* Shared */,
 				8FF2478A242145090089A09F /* coronatrace-ios */,
 				8FF24789242145090089A09F /* Products */,
 				4A758A30C3D7979628B6C7EB /* Pods */,
@@ -124,6 +129,31 @@
 				8F34FD5924214D4600C0F0F5 /* README.md */,
 			);
 			path = "coronatrace-ios";
+			sourceTree = "<group>";
+		};
+		B2B9DF312421865D00E11ECF /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9DF3524218D4500E11ECF /* Models */,
+				B2B9DF322421868300E11ECF /* Workers */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B2B9DF322421868300E11ECF /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9DF332421869300E11ECF /* LocationWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		B2B9DF3524218D4500E11ECF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9DF3624218D5D00E11ECF /* LocationModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		EB15B9DA41B2522115B34031 /* Frameworks */ = {
@@ -278,9 +308,11 @@
 				8FF2478C242145090089A09F /* AppDelegate.swift in Sources */,
 				8F34FD3E242149BE00C0F0F5 /* DashboardInteractor.swift in Sources */,
 				8F34FD5224214A7200C0F0F5 /* MainRouter.swift in Sources */,
+				B2B9DF342421869300E11ECF /* LocationWorker.swift in Sources */,
 				8F34FD3C242149BE00C0F0F5 /* DashboardRouter.swift in Sources */,
 				8F34FD3B242149BE00C0F0F5 /* DashboardWorker.swift in Sources */,
 				8F34FD3A242149BE00C0F0F5 /* DashboardPresenter.swift in Sources */,
+				B2B9DF3724218D5D00E11ECF /* LocationModel.swift in Sources */,
 				8F34FD5E24214F8100C0F0F5 /* R.generated.swift in Sources */,
 				8F34FD5524214A7200C0F0F5 /* MainConfigurator.swift in Sources */,
 			);
