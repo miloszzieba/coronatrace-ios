@@ -13,6 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var mainRouter: MainRouter?
     
+    let locationWorker: LocationWorkerProtocol = LocationWorker.shared
+    
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -23,6 +25,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.mainRouter = main
         self.window = window
         
+        application.setMinimumBackgroundFetchInterval(UIApplication.backgroundFetchIntervalMinimum)
+        
         return true
+    }
+    
+    func application(_ application: UIApplication,
+                     performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+
+        locationWorker.backgroundFetchRequest { locationModel, error in
+            guard let locationModel = locationModel else {
+                if let error = error {
+                    print(error)
+                    completionHandler(.failed)
+                } else {
+                    completionHandler(.noData)
+                }
+                return
+            }
+            
+            // TODO: - Handle received model
+            print(locationModel)
+            completionHandler(.newData)
+        }
     }
 }
