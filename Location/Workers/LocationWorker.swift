@@ -10,7 +10,7 @@ import Foundation
 import UIKit.UIApplication
 import CoreLocation
 
-protocol LocationWorkerProtocol {
+protocol LocationWorkerProtocol: AnyObject {
     typealias BackgroundFetchResponse = ((LocationModel?, Error?) -> ())
     
     var delegate: LocationWorkerDelegate? { get set }
@@ -19,9 +19,13 @@ protocol LocationWorkerProtocol {
     func backgroundFetchRequest(response: BackgroundFetchResponse?)
 }
 
-protocol LocationWorkerDelegate: class {
+protocol LocationWorkerDelegate: AnyObject {
     func locationWorker(_ worker: LocationWorker, didChangeAuthorization isAuthorized: Bool)
     func locationWorker(_ worker: LocationWorker, didUpdateLocation location: LocationModel)
+}
+
+extension LocationWorkerDelegate {
+    func locationWorker(_ worker: LocationWorker, didChangeAuthorization isAuthorized: Bool) { }
 }
 
 final class LocationWorker: NSObject, LocationWorkerProtocol {
@@ -38,6 +42,7 @@ final class LocationWorker: NSObject, LocationWorkerProtocol {
     static let shared = LocationWorker()
     
     weak var delegate: LocationWorkerDelegate?
+    var locationDatabase: DBLocationWorkerProtocol?
     
     // MARK: - Private Properties
     private let locationManager = CLLocationManager()
@@ -67,52 +72,9 @@ final class LocationWorker: NSObject, LocationWorkerProtocol {
             userInfo: nil,
             repeats: false)
     }
-    
-    // MARK: - Private Methods
-    private func setup() {        
-        setupLocationManager()
-        setupSystemLifecycleObservers()
-    }
-    
-    private func setupLocationManager() {
-        locationManager.delegate = self
-        locationManager.allowsBackgroundLocationUpdates = true
-        locationManager.pausesLocationUpdatesAutomatically = false
-        
-        locationManager.startUpdatingLocation()
-    }
-    
-    private func setupSystemLifecycleObservers() {
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(appMovedToBackground),
-            name: UIApplication.willResignActiveNotification,
-            object: nil)
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(appMovedToForeground),
-            name: UIApplication.willEnterForegroundNotification,
-            object: nil)
-    }
-    
-    @objc private func appMovedToBackground() {
-        locationManager.startMonitoringSignificantLocationChanges()
-    }
-    
-    @objc private func appMovedToForeground() {
-        locationManager.startUpdatingLocation()
-    }
-    
-    @objc private func backgroundFetchRequestTimeout(_ timer: Timer) {
-        backgroundFetchResponse?(nil, LocationWorkerError.backgroundFetchTimeout)
-        backgroundFetchResponse = nil
-        
-        timer.invalidate()
-        backgroundFetchRequestTimeoutTimer = nil
-    }
 }
 
+// MARK: - CLLocationManagerDelegate
 extension LocationWorker: CLLocationManagerDelegate {
     func locationManager(
         _ manager: CLLocationManager,
@@ -132,16 +94,70 @@ extension LocationWorker: CLLocationManagerDelegate {
         _ manager: CLLocationManager,
         didUpdateLocations locations: [CLLocation]) {
         let validLocations = locations.filter { isLocationValid($0) }
+        
         validLocations.forEach { location in
             let locationModel = LocationModel(location: location)
+            
+            save(location: locationModel)
             delegate?.locationWorker(self, didUpdateLocation: locationModel)
             backgroundFetchResponse?(locationModel, nil)
         }
         
         backgroundFetchResponse = nil
     }
+}
+
+// MARK: - Private Methods
+private extension LocationWorker {
+    func setup() {
+        setupLocationManager()
+        setupSystemLifecycleObservers()
+    }
     
-    private func isLocationValid(_ location: CLLocation) -> Bool {
+    func setupLocationManager() {
+        locationManager.delegate = self
+        locationManager.allowsBackgroundLocationUpdates = true
+        locationManager.pausesLocationUpdatesAutomatically = false
+        
+        locationManager.startUpdatingLocation()
+    }
+    
+    func setupSystemLifecycleObservers() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(appMovedToBackground),
+            name: UIApplication.willResignActiveNotification,
+            object: nil)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(appMovedToForeground),
+            name: UIApplication.willEnterForegroundNotification,
+            object: nil)
+    }
+    
+    @objc func appMovedToBackground() {
+        locationManager.startMonitoringSignificantLocationChanges()
+    }
+    
+    @objc func appMovedToForeground() {
+        locationManager.startUpdatingLocation()
+    }
+    
+    @objc func backgroundFetchRequestTimeout(_ timer: Timer) {
+        backgroundFetchResponse?(nil, LocationWorkerError.backgroundFetchTimeout)
+        backgroundFetchResponse = nil
+        
+        timer.invalidate()
+        backgroundFetchRequestTimeoutTimer = nil
+    }
+    
+    func isLocationValid(_ location: CLLocation) -> Bool {
         location.verticalAccuracy < Constants.minimumAccuracy && location.horizontalAccuracy < Constants.minimumAccuracy
+    }
+    
+    func save(location: LocationModel) {
+        let dbModel = DBLocationModel(location: location)
+        locationDatabase?.save(object: dbModel)
     }
 }
