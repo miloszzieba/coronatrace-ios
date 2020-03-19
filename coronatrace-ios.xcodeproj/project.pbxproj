@@ -96,9 +96,19 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		8F69DAD32423FC2A00E1056E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9DF3524218D4500E11ECF /* Models */,
+				B2B9DF322421868300E11ECF /* Workers */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		8FF2477F242145090089A09F = {
 			isa = PBXGroup;
 			children = (
+				8F69DAD32423FC2A00E1056E /* Location */,
 				8F34FD5C24214F8100C0F0F5 /* Generated */,
 				8F34FD31242149AE00C0F0F5 /* Dashboard */,
 				B2B9DF312421865D00E11ECF /* Shared */,
@@ -134,8 +144,6 @@
 		B2B9DF312421865D00E11ECF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				B2B9DF3524218D4500E11ECF /* Models */,
-				B2B9DF322421868300E11ECF /* Workers */,
 			);
 			path = Shared;
 			sourceTree = "<group>";

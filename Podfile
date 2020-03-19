@@ -9,6 +9,7 @@ project 'coronatrace-ios'
 def utilities
     pod 'R.swift', '5.1.0'
     pod 'SwiftLint', '0.39.1'
+    pod 'RealmSwift', '4.3.2'
 end
 
 target 'coronatrace-ios' do
