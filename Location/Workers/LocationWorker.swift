@@ -157,7 +157,6 @@ private extension LocationWorker {
     }
     
     func save(location: LocationModel) {
-        let dbModel = DBLocationModel(location: location)
-        locationDatabase?.save(object: dbModel)
+        locationDatabase?.save(object: location)
     }
 }

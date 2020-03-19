@@ -27,6 +27,7 @@
 		8FF2478C242145090089A09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF2478B242145090089A09F /* AppDelegate.swift */; };
 		8FF247952421450A0089A09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF247942421450A0089A09F /* Assets.xcassets */; };
 		8FF247982421450A0089A09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF247962421450A0089A09F /* LaunchScreen.storyboard */; };
+		B20CFC0924241FD600B9F5DD /* DatabaseStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CFC0824241FD600B9F5DD /* DatabaseStorable.swift */; };
 		B2B9DF342421869300E11ECF /* LocationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9DF332421869300E11ECF /* LocationWorker.swift */; };
 		B2B9DF3724218D5D00E11ECF /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9DF3624218D5D00E11ECF /* LocationModel.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		8FF247972421450A0089A09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FF247992421450A0089A09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1206F15BE7C1C73B6450DF7 /* Pods-coronatrace-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coronatrace-ios.debug.xcconfig"; path = "Target Support Files/Pods-coronatrace-ios/Pods-coronatrace-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		B20CFC0824241FD600B9F5DD /* DatabaseStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseStorable.swift; sourceTree = "<group>"; };
 		B2B9DF332421869300E11ECF /* LocationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWorker.swift; sourceTree = "<group>"; };
 		B2B9DF3624218D5D00E11ECF /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		E290AEC3A4339DD45CCC5049 /* Pods-coronatrace-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coronatrace-ios.release.xcconfig"; path = "Target Support Files/Pods-coronatrace-ios/Pods-coronatrace-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				8F69DAD72423FC8000E1056E /* Models */,
+				B20CFC0724241FAF00B9F5DD /* Protocols */,
 				8F69DADA2423FD7C00E1056E /* Workers */,
 			);
 			path = Database;
@@ -175,6 +178,14 @@
 				8F34FD5924214D4600C0F0F5 /* README.md */,
 			);
 			path = "coronatrace-ios";
+			sourceTree = "<group>";
+		};
+		B20CFC0724241FAF00B9F5DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B20CFC0824241FD600B9F5DD /* DatabaseStorable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B2B9DF312421865D00E11ECF /* Shared */ = {
@@ -352,6 +363,7 @@
 				8F69DAD92423FC9000E1056E /* DBLocationModel.swift in Sources */,
 				8F34FD3D242149BE00C0F0F5 /* DashboardViewController.swift in Sources */,
 				8FF2478C242145090089A09F /* AppDelegate.swift in Sources */,
+				B20CFC0924241FD600B9F5DD /* DatabaseStorable.swift in Sources */,
 				8F34FD3E242149BE00C0F0F5 /* DashboardInteractor.swift in Sources */,
 				8F34FD5224214A7200C0F0F5 /* MainRouter.swift in Sources */,
 				8F69DADC2423FD9300E1056E /* DatabaseWorker.swift in Sources */,

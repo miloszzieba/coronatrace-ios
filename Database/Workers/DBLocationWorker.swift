@@ -9,12 +9,12 @@
 import Foundation
 
 protocol DBLocationWorkerProtocol: AnyObject {
-    func list() -> [DBLocationModel]
-    func save(object: DBLocationModel)
-    func remove(object: DBLocationModel)
+    func list() -> [LocationModel]
+    func save(object: LocationModel)
+    func remove(object: LocationModel)
 }
 
-final class DBLocationWorker: DatabaseWorker<DBLocationModel> {
+final class DBLocationWorker: DatabaseWorker<LocationModel> {
     static let shared: DBLocationWorkerProtocol = DBLocationWorker()
     
     private override init() { }

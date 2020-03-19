@@ -8,13 +8,13 @@
 
 import RealmSwift
 
-class DatabaseWorker<TObject: DBModel> { 
+class DatabaseWorker<TObject: DatabaseStorable> {
     func list() -> [TObject] {
         do {
             let realm = try Realm()
-            let objects = realm.objects(TObject.self)
+            let objects = realm.objects(TObject.Model.self)
             
-            return Array(objects)
+            return Array(objects.map { TObject.init(dbModel: $0) })
         } catch {
             assertionFailure("Fix your code")
             print(error)
@@ -25,13 +25,14 @@ class DatabaseWorker<TObject: DBModel> {
     
     func save(object: TObject) {
         execute(transaction: { (realm) in
-            realm.add(object)
+            realm.add(object.toDBModel())
         })
     }
     
     func remove(object: TObject) {
         execute(transaction: { (realm) in
-            guard let objectToDelete = realm.object(ofType: TObject.self, forPrimaryKey: object.id) else {
+            guard let objectToDelete = realm.object(ofType: TObject.Model.self,
+                                                    forPrimaryKey: object.toDBModel().id) else {
                 return
             }
             

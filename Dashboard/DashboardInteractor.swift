@@ -18,7 +18,7 @@ final class DashboardInteractor: DashboardDataStore {
     private var locationDatabase: DBLocationWorkerProtocol
     private var locationWorker: LocationWorkerProtocol
     
-    private var locations: [DBLocationModel] = [] {
+    private var locations: [LocationModel] = [] {
         didSet {
             presenter?.reloadLocationList(with: locations)
         }
@@ -48,7 +48,6 @@ extension DashboardInteractor: LocationWorkerDelegate {
 
 private extension DashboardInteractor {
     func reloadLocations() {
-        let dbLocations = locationDatabase.list()
-        locations = dbLocations
+        self.locations = self.locationDatabase.list()
     }
 }

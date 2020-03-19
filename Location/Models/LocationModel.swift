@@ -29,3 +29,19 @@ struct LocationModel {
         self.verticalAccuracy = location.verticalAccuracy
     }
 }
+
+extension LocationModel: DatabaseStorable {
+    init(dbModel: DBLocationModel) {
+        self.latitude = dbModel.latitude
+        self.longitude = dbModel.longitude
+        self.timestamp = dbModel.timestamp
+        self.horizontalAccuracy = dbModel.horizontalAccuracy
+        self.verticalAccuracy = dbModel.verticalAccuracy
+    }
+    
+    func toDBModel() -> DBLocationModel {
+        DBLocationModel(location: self)
+    }
+}
+
+extension LocationModel: Hashable {  }

@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DashboardPresenterLogic {
-    func reloadLocationList(with locations: [DBLocationModel])
+    func reloadLocationList(with locations: [LocationModel])
 }
 
 final class DashboardPresenter {
@@ -21,8 +21,8 @@ final class DashboardPresenter {
 }
 
 extension DashboardPresenter: DashboardPresenterLogic {
-    func reloadLocationList(with locations: [DBLocationModel]) {
-        var snapshot = NSDiffableDataSourceSnapshot<String, DBLocationModel>()
+    func reloadLocationList(with locations: [LocationModel]) {
+        var snapshot = NSDiffableDataSourceSnapshot<String, LocationModel>()
         snapshot.appendSections([""])
         snapshot.appendItems(locations)
         

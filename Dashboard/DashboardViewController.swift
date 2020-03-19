@@ -9,13 +9,13 @@
 import UIKit
 
 protocol DashboardViewControllerLogic: AnyObject {
-    func reloadList(snapshot: NSDiffableDataSourceSnapshot<String, DBLocationModel>)
+    func reloadList(snapshot: NSDiffableDataSourceSnapshot<String, LocationModel>)
 }
 
 final class DashboardViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     
-    private lazy var dataSource: UITableViewDiffableDataSource<String, DBLocationModel> = UITableViewDiffableDataSource(
+    private lazy var dataSource: UITableViewDiffableDataSource<String, LocationModel> = UITableViewDiffableDataSource(
         tableView: tableView,
         cellProvider: { (tableView, indexPath, location) -> UITableViewCell in
             let cell = UITableViewCell(style: .subtitle, reuseIdentifier: nil)
@@ -38,7 +38,7 @@ final class DashboardViewController: UIViewController {
 }
 
 extension DashboardViewController: DashboardViewControllerLogic {
-    func reloadList(snapshot: NSDiffableDataSourceSnapshot<String, DBLocationModel>) {
+    func reloadList(snapshot: NSDiffableDataSourceSnapshot<String, LocationModel>) {
         dataSource.apply(snapshot)
         tableView.refreshControl?.endRefreshing()
     }
