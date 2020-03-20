@@ -20,9 +20,14 @@
 		8F34FD5A24214D4600C0F0F5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8F34FD5924214D4600C0F0F5 /* README.md */; };
 		8F34FD5E24214F8100C0F0F5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F34FD5D24214F8100C0F0F5 /* R.generated.swift */; };
 		8F34FD6024214FB400C0F0F5 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F34FD5F24214FB400C0F0F5 /* Dashboard.storyboard */; };
+		8F69DAD92423FC9000E1056E /* DBLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69DAD82423FC9000E1056E /* DBLocationModel.swift */; };
+		8F69DADC2423FD9300E1056E /* DatabaseWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69DADB2423FD9300E1056E /* DatabaseWorker.swift */; };
+		8F69DADE2424004D00E1056E /* DBModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69DADD2424004D00E1056E /* DBModel.swift */; };
+		8F69DAE02424006D00E1056E /* DBLocationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F69DADF2424006D00E1056E /* DBLocationWorker.swift */; };
 		8FF2478C242145090089A09F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF2478B242145090089A09F /* AppDelegate.swift */; };
 		8FF247952421450A0089A09F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FF247942421450A0089A09F /* Assets.xcassets */; };
 		8FF247982421450A0089A09F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FF247962421450A0089A09F /* LaunchScreen.storyboard */; };
+		B20CFC0924241FD600B9F5DD /* DatabaseStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CFC0824241FD600B9F5DD /* DatabaseStorable.swift */; };
 		B2B9DF342421869300E11ECF /* LocationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9DF332421869300E11ECF /* LocationWorker.swift */; };
 		B2B9DF3724218D5D00E11ECF /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9DF3624218D5D00E11ECF /* LocationModel.swift */; };
 /* End PBXBuildFile section */
@@ -41,12 +46,17 @@
 		8F34FD5924214D4600C0F0F5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		8F34FD5D24214F8100C0F0F5 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		8F34FD5F24214FB400C0F0F5 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		8F69DAD82423FC9000E1056E /* DBLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBLocationModel.swift; sourceTree = "<group>"; };
+		8F69DADB2423FD9300E1056E /* DatabaseWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseWorker.swift; sourceTree = "<group>"; };
+		8F69DADD2424004D00E1056E /* DBModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBModel.swift; sourceTree = "<group>"; };
+		8F69DADF2424006D00E1056E /* DBLocationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBLocationWorker.swift; sourceTree = "<group>"; };
 		8FF24788242145090089A09F /* Coronatrace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coronatrace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FF2478B242145090089A09F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8FF247942421450A0089A09F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FF247972421450A0089A09F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FF247992421450A0089A09F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1206F15BE7C1C73B6450DF7 /* Pods-coronatrace-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coronatrace-ios.debug.xcconfig"; path = "Target Support Files/Pods-coronatrace-ios/Pods-coronatrace-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		B20CFC0824241FD600B9F5DD /* DatabaseStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseStorable.swift; sourceTree = "<group>"; };
 		B2B9DF332421869300E11ECF /* LocationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWorker.swift; sourceTree = "<group>"; };
 		B2B9DF3624218D5D00E11ECF /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		E290AEC3A4339DD45CCC5049 /* Pods-coronatrace-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coronatrace-ios.release.xcconfig"; path = "Target Support Files/Pods-coronatrace-ios/Pods-coronatrace-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,9 +106,48 @@
 			path = Generated;
 			sourceTree = "<group>";
 		};
+		8F69DAD32423FC2A00E1056E /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				B2B9DF3524218D4500E11ECF /* Models */,
+				B2B9DF322421868300E11ECF /* Workers */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		8F69DAD52423FC6700E1056E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8F69DAD72423FC8000E1056E /* Models */,
+				B20CFC0724241FAF00B9F5DD /* Protocols */,
+				8F69DADA2423FD7C00E1056E /* Workers */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		8F69DAD72423FC8000E1056E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8F69DAD82423FC9000E1056E /* DBLocationModel.swift */,
+				8F69DADD2424004D00E1056E /* DBModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8F69DADA2423FD7C00E1056E /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				8F69DADB2423FD9300E1056E /* DatabaseWorker.swift */,
+				8F69DADF2424006D00E1056E /* DBLocationWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
 		8FF2477F242145090089A09F = {
 			isa = PBXGroup;
 			children = (
+				8F69DAD52423FC6700E1056E /* Database */,
+				8F69DAD32423FC2A00E1056E /* Location */,
 				8F34FD5C24214F8100C0F0F5 /* Generated */,
 				8F34FD31242149AE00C0F0F5 /* Dashboard */,
 				B2B9DF312421865D00E11ECF /* Shared */,
@@ -131,11 +180,17 @@
 			path = "coronatrace-ios";
 			sourceTree = "<group>";
 		};
+		B20CFC0724241FAF00B9F5DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B20CFC0824241FD600B9F5DD /* DatabaseStorable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		B2B9DF312421865D00E11ECF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				B2B9DF3524218D4500E11ECF /* Models */,
-				B2B9DF322421868300E11ECF /* Workers */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -302,12 +357,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F69DAE02424006D00E1056E /* DBLocationWorker.swift in Sources */,
 				8F34FD39242149BE00C0F0F5 /* DashboardActions.swift in Sources */,
 				8F34FD3F242149BE00C0F0F5 /* DashboardConfigurator.swift in Sources */,
+				8F69DAD92423FC9000E1056E /* DBLocationModel.swift in Sources */,
 				8F34FD3D242149BE00C0F0F5 /* DashboardViewController.swift in Sources */,
 				8FF2478C242145090089A09F /* AppDelegate.swift in Sources */,
+				B20CFC0924241FD600B9F5DD /* DatabaseStorable.swift in Sources */,
 				8F34FD3E242149BE00C0F0F5 /* DashboardInteractor.swift in Sources */,
 				8F34FD5224214A7200C0F0F5 /* MainRouter.swift in Sources */,
+				8F69DADC2423FD9300E1056E /* DatabaseWorker.swift in Sources */,
 				B2B9DF342421869300E11ECF /* LocationWorker.swift in Sources */,
 				8F34FD3C242149BE00C0F0F5 /* DashboardRouter.swift in Sources */,
 				8F34FD3B242149BE00C0F0F5 /* DashboardWorker.swift in Sources */,
@@ -315,6 +374,7 @@
 				B2B9DF3724218D5D00E11ECF /* LocationModel.swift in Sources */,
 				8F34FD5E24214F8100C0F0F5 /* R.generated.swift in Sources */,
 				8F34FD5524214A7200C0F0F5 /* MainConfigurator.swift in Sources */,
+				8F69DADE2424004D00E1056E /* DBModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +442,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -436,7 +496,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -453,7 +513,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "coronatrace-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,7 +532,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "coronatrace-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

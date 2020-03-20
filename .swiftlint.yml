@@ -45,12 +45,9 @@ custom_rules:
     message: "Hardcoded UIStoryboardSegue strings are not allowed."
     severity: error
 
-included:
- - coronatrace-ios
- - Dashboard
- 
 excluded:
- - ./*/*/R.generated.swift
+ - ./*/R.generated.swift
+ - Pods
 
 line_length:
   - 150

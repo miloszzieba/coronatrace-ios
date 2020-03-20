@@ -8,16 +8,47 @@
 
 import UIKit
 
-protocol DashboardInteractorLogic {}
+@objc protocol DashboardInteractorLogic {
+    func refresh()
+}
 protocol DashboardDataStore {}
 
 final class DashboardInteractor: DashboardDataStore {
     private var presenter: DashboardPresenterLogic?
-    //var worker: DashboardWorker?
+    private var locationDatabase: DBLocationWorkerProtocol
+    private var locationWorker: LocationWorkerProtocol
     
-    init(presenter: DashboardPresenterLogic) {
+    private var locations: [LocationModel] = [] {
+        didSet {
+            presenter?.reloadLocationList(with: locations)
+        }
+    }
+    
+    init(presenter: DashboardPresenterLogic,
+         locationDatabase: DBLocationWorkerProtocol,
+         locationWorker: LocationWorkerProtocol) {
         self.presenter = presenter
+        self.locationDatabase = locationDatabase
+        self.locationWorker = locationWorker
+        locationWorker.delegate = self
     }
 }
 
-extension DashboardInteractor: DashboardInteractorLogic {}
+extension DashboardInteractor: DashboardInteractorLogic {
+    func refresh() {
+        reloadLocations()
+    }
+}
+
+extension DashboardInteractor: LocationWorkerDelegate {
+    func locationWorker(_ worker: LocationWorker, didUpdateLocation location: LocationModel) {
+        reloadLocations()
+    }
+}
+
+private extension DashboardInteractor {
+    func reloadLocations() {
+        self.locations = self.locationDatabase.list()
+        print(locations.count)
+    }
+}

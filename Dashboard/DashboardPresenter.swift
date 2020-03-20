@@ -8,7 +8,9 @@
 
 import UIKit
 
-protocol DashboardPresenterLogic {}
+protocol DashboardPresenterLogic {
+    func reloadLocationList(with locations: [LocationModel])
+}
 
 final class DashboardPresenter {
     private weak var viewController: DashboardViewControllerLogic?
@@ -18,4 +20,12 @@ final class DashboardPresenter {
     }
 }
 
-extension DashboardPresenter: DashboardPresenterLogic {}
+extension DashboardPresenter: DashboardPresenterLogic {
+    func reloadLocationList(with locations: [LocationModel]) {
+        var snapshot = NSDiffableDataSourceSnapshot<String, LocationModel>()
+        snapshot.appendSections([""])
+        snapshot.appendItems(locations)
+        
+        viewController?.reloadList(snapshot: snapshot)
+    }
+}

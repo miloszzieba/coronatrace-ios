@@ -16,7 +16,10 @@ final class DashboardConfigurator: DashboardConfiguratorProtocol {
     func configureDashboardModule() -> UIViewController? {
         let dashboard = R.storyboard.dashboard.dashboardViewController()
         let presenter = DashboardPresenter(viewController: dashboard)
-        let interactor = DashboardInteractor(presenter: presenter)
+        let interactor = DashboardInteractor(
+            presenter: presenter,
+            locationDatabase: DBLocationWorker.shared,
+            locationWorker: LocationWorker.shared)
         let router = DashboardRouter(viewController: dashboard, dataStore: interactor)
         
         dashboard?.interactor = interactor
