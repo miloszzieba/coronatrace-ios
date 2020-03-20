@@ -16,7 +16,7 @@ class DBLocationModel: DBModel {
     @objc dynamic var verticalAccuracy: Double = 0
     
     convenience init(location: LocationModel) {
-        self.init()
+        self.init(id: location.id)
         latitude = location.latitude
         longitude = location.longitude
         timestamp = location.timestamp

@@ -32,6 +32,7 @@ final class LocationWorker: NSObject, LocationWorkerProtocol {
     private enum Constants {
         static let minimumAccuracy: CLLocationAccuracy = 50.0
         static let backgroundFetchRequestTimeout: TimeInterval = 10.0
+        static let newLocationThrottle: TimeInterval = 60.0 * 5.0
     }
     
     enum LocationWorkerError: Error {
@@ -157,6 +158,18 @@ private extension LocationWorker {
     }
     
     func save(location: LocationModel) {
+        let locations = locationDatabase?.list().sorted()
+        
+        guard locations?.isEmpty == false else {
+            locationDatabase?.save(object: location)
+            return
+        }
+        
+        guard let lastSavedLocation = locations?.last,
+            Date().timeIntervalSince1970 - lastSavedLocation.timestamp > Constants.newLocationThrottle else {
+            return
+        }
+        
         locationDatabase?.save(object: location)
     }
 }

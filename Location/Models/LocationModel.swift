@@ -14,6 +14,7 @@ struct LocationModel {
     typealias LocationAccuracy = Double
     
     // MARK: - Public Properties
+    let id: String
     let latitude: LocationDegrees
     let longitude: LocationDegrees
     let timestamp: TimeInterval
@@ -22,6 +23,7 @@ struct LocationModel {
     
     // MARK: - Initializers
     init(location: CLLocation) {
+        self.id = UUID().uuidString
         self.latitude = location.coordinate.latitude
         self.longitude = location.coordinate.longitude
         self.timestamp = location.timestamp.timeIntervalSince1970
@@ -32,6 +34,7 @@ struct LocationModel {
 
 extension LocationModel: DatabaseStorable {
     init(dbModel: DBLocationModel) {
+        self.id = dbModel.id
         self.latitude = dbModel.latitude
         self.longitude = dbModel.longitude
         self.timestamp = dbModel.timestamp
@@ -45,3 +48,8 @@ extension LocationModel: DatabaseStorable {
 }
 
 extension LocationModel: Hashable {  }
+extension LocationModel: Comparable {
+    static func < (lhs: LocationModel, rhs: LocationModel) -> Bool {
+        lhs.timestamp < rhs.timestamp
+    }
+}

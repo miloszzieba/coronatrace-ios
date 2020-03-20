@@ -49,5 +49,6 @@ extension DashboardInteractor: LocationWorkerDelegate {
 private extension DashboardInteractor {
     func reloadLocations() {
         self.locations = self.locationDatabase.list()
+        print(locations.count)
     }
 }

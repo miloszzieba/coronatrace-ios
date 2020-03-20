@@ -33,6 +33,7 @@ class DatabaseWorker<TObject: DatabaseStorable> {
         execute(transaction: { (realm) in
             guard let objectToDelete = realm.object(ofType: TObject.Model.self,
                                                     forPrimaryKey: object.toDBModel().id) else {
+                                                        assertionFailure("No record found ")
                 return
             }
             

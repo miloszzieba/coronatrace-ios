@@ -11,9 +11,14 @@ import RealmSwift
 class DBModel: Object {
     @objc dynamic var id = ""
     
+    init(id: String) {
+        super.init()
+        self.id = id
+    }
+    
     required init() {
         super.init()
-        id = NSUUID().uuidString
+        self.id = NSUUID().uuidString
     }
     
     override class func primaryKey() -> String? {
