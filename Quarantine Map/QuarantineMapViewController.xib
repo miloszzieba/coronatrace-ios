@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-ExtraBold.ttf">
+            <string>Baloo2-ExtraBold</string>
+        </array>
+        <array key="Baloo2-Regular.ttf">
+            <string>Baloo2-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuarantineMapViewController" customModule="Coronatrace" customModuleProvider="target">
+            <connections>
+                <outlet property="map" destination="InO-Gv-Cd9" id="g1G-oc-wlQ"/>
+                <outlet property="mapContainerView" destination="Rg3-J5-wL9" id="9fp-3C-d4b"/>
+                <outlet property="view" destination="iN0-l3-epB" id="WxZ-J1-3e0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Osoby objęte kwarantanną" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fi-Tq-X5m">
+                    <rect key="frame" x="0.0" y="44" width="414" height="33"/>
+                    <fontDescription key="fontDescription" name="Baloo2-ExtraBold" family="Baloo 2" pointSize="28"/>
+                    <color key="textColor" name="font-primary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wykryto u Ciebie zareżeniem wirusem?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-QP-DJt">
+                    <rect key="frame" x="16" y="784" width="382" height="14"/>
+                    <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="12"/>
+                    <color key="textColor" name="font-primary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWL-m8-CuB" customClass="MainButton" customModule="Coronatrace" customModuleProvider="target">
+                    <rect key="frame" x="143" y="814" width="128" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="4gk-g5-uey"/>
+                        <constraint firstAttribute="height" constant="48" id="R3v-xQ-bVo"/>
+                    </constraints>
+                    <state key="normal" title="Zgłoś"/>
+                    <connections>
+                        <action selector="report:" destination="-1" eventType="touchUpInside" id="b6l-nb-RT1"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rg3-J5-wL9">
+                    <rect key="frame" x="16" y="93" width="382" height="675"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="InO-Gv-Cd9">
+                            <rect key="frame" x="8" y="8" width="366" height="659"/>
+                        </mapView>
+                    </subviews>
+                    <color key="backgroundColor" name="background-secondary"/>
+                    <constraints>
+                        <constraint firstItem="InO-Gv-Cd9" firstAttribute="top" secondItem="Rg3-J5-wL9" secondAttribute="top" constant="8" id="1LT-S1-bGD"/>
+                        <constraint firstAttribute="trailing" secondItem="InO-Gv-Cd9" secondAttribute="trailing" constant="8" id="UKE-Ow-Q7u"/>
+                        <constraint firstAttribute="bottom" secondItem="InO-Gv-Cd9" secondAttribute="bottom" constant="8" id="lZW-cw-fCJ"/>
+                        <constraint firstItem="InO-Gv-Cd9" firstAttribute="leading" secondItem="Rg3-J5-wL9" secondAttribute="leading" constant="8" id="td7-MX-QqY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" name="background-primary"/>
+            <constraints>
+                <constraint firstItem="hWL-m8-CuB" firstAttribute="top" secondItem="fW6-QP-DJt" secondAttribute="bottom" constant="16" id="IBe-eO-SXd"/>
+                <constraint firstItem="fW6-QP-DJt" firstAttribute="top" secondItem="Rg3-J5-wL9" secondAttribute="bottom" constant="16" id="IBs-Kt-it8"/>
+                <constraint firstItem="hWL-m8-CuB" firstAttribute="top" secondItem="fW6-QP-DJt" secondAttribute="bottom" constant="16" id="Ixf-E6-AxZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Rg3-J5-wL9" secondAttribute="trailing" constant="16" id="PTv-Wq-Snx"/>
+                <constraint firstItem="3fi-Tq-X5m" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="SiY-iH-ppp"/>
+                <constraint firstItem="hWL-m8-CuB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UAI-u7-GaQ"/>
+                <constraint firstItem="fW6-QP-DJt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="VsU-VY-MVn"/>
+                <constraint firstItem="Rg3-J5-wL9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="dj8-qe-qbc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3fi-Tq-X5m" secondAttribute="trailing" id="lMm-Kg-hVp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hWL-m8-CuB" secondAttribute="bottom" id="lr9-SH-i7D"/>
+                <constraint firstItem="Rg3-J5-wL9" firstAttribute="top" secondItem="3fi-Tq-X5m" secondAttribute="bottom" constant="16" id="nyr-dc-dPo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fW6-QP-DJt" secondAttribute="trailing" constant="16" id="uai-Qa-iWQ"/>
+                <constraint firstItem="3fi-Tq-X5m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="uz8-xQ-RbD"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background-primary">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background-secondary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="font-primary">
+            <color red="0.31764705882352939" green="0.34509803921568627" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

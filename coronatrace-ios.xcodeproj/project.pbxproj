@@ -30,6 +30,45 @@
 		B20CFC0924241FD600B9F5DD /* DatabaseStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20CFC0824241FD600B9F5DD /* DatabaseStorable.swift */; };
 		B2B9DF342421869300E11ECF /* LocationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9DF332421869300E11ECF /* LocationWorker.swift */; };
 		B2B9DF3724218D5D00E11ECF /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B9DF3624218D5D00E11ECF /* LocationModel.swift */; };
+		B2EF3B742426C40300912A14 /* ToSPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B6F2426C40300912A14 /* ToSPresenter.swift */; };
+		B2EF3B752426C40300912A14 /* ToSRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B702426C40300912A14 /* ToSRouter.swift */; };
+		B2EF3B762426C40300912A14 /* ToSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B712426C40300912A14 /* ToSViewController.swift */; };
+		B2EF3B772426C40300912A14 /* ToSInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B722426C40300912A14 /* ToSInteractor.swift */; };
+		B2EF3B782426C40300912A14 /* ToSConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B732426C40300912A14 /* ToSConfigurator.swift */; };
+		B2EF3B7A2426C41500912A14 /* ToSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3B792426C41500912A14 /* ToSViewController.xib */; };
+		B2EF3B822426C5DE00912A14 /* Baloo2-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3B7D2426C5CE00912A14 /* Baloo2-Bold.ttf */; };
+		B2EF3B832426C5DE00912A14 /* Baloo2-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3B7E2426C5CE00912A14 /* Baloo2-ExtraBold.ttf */; };
+		B2EF3B842426C5DE00912A14 /* Baloo2-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3B802426C5CE00912A14 /* Baloo2-Medium.ttf */; };
+		B2EF3B852426C5DE00912A14 /* Baloo2-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3B812426C5CE00912A14 /* Baloo2-Regular.ttf */; };
+		B2EF3B862426C5DE00912A14 /* Baloo2-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3B7F2426C5CE00912A14 /* Baloo2-SemiBold.ttf */; };
+		B2EF3B892426C85B00912A14 /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B882426C85B00912A14 /* MainButton.swift */; };
+		B2EF3B902426CCC800912A14 /* LocationRequestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B8B2426CCC800912A14 /* LocationRequestPresenter.swift */; };
+		B2EF3B912426CCC800912A14 /* LocationRequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B8C2426CCC800912A14 /* LocationRequestRouter.swift */; };
+		B2EF3B922426CCC800912A14 /* LocationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B8D2426CCC800912A14 /* LocationRequestViewController.swift */; };
+		B2EF3B932426CCC800912A14 /* LocationRequestInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B8E2426CCC800912A14 /* LocationRequestInteractor.swift */; };
+		B2EF3B942426CCC800912A14 /* LocationRequestConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B8F2426CCC800912A14 /* LocationRequestConfigurator.swift */; };
+		B2EF3B962426CCDF00912A14 /* LocationRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3B952426CCDF00912A14 /* LocationRequestViewController.xib */; };
+		B2EF3B9D2426D29000912A14 /* QuarantineMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B982426D29000912A14 /* QuarantineMapPresenter.swift */; };
+		B2EF3B9E2426D29000912A14 /* QuarantineMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B992426D29000912A14 /* QuarantineMapRouter.swift */; };
+		B2EF3B9F2426D29000912A14 /* QuarantineMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B9A2426D29000912A14 /* QuarantineMapViewController.swift */; };
+		B2EF3BA02426D29000912A14 /* QuarantineMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B9B2426D29000912A14 /* QuarantineMapInteractor.swift */; };
+		B2EF3BA12426D29000912A14 /* QuarantineMapConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3B9C2426D29000912A14 /* QuarantineMapConfigurator.swift */; };
+		B2EF3BA32426D29E00912A14 /* QuarantineMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3BA22426D29E00912A14 /* QuarantineMapViewController.xib */; };
+		B2EF3BA62426D54E00912A14 /* Infections.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BA52426D54E00912A14 /* Infections.swift */; };
+		B2EF3BA92426DCD900912A14 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BA82426DCD900912A14 /* UIImage.swift */; };
+		B2EF3BB02426E52C00912A14 /* ReportPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BAB2426E52C00912A14 /* ReportPresenter.swift */; };
+		B2EF3BB12426E52C00912A14 /* ReportRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BAC2426E52C00912A14 /* ReportRouter.swift */; };
+		B2EF3BB22426E52C00912A14 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BAD2426E52C00912A14 /* ReportViewController.swift */; };
+		B2EF3BB32426E52C00912A14 /* ReportInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BAE2426E52C00912A14 /* ReportInteractor.swift */; };
+		B2EF3BB42426E52C00912A14 /* ReportConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BAF2426E52C00912A14 /* ReportConfigurator.swift */; };
+		B2EF3BB62426E53B00912A14 /* ReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3BB52426E53B00912A14 /* ReportViewController.xib */; };
+		B2EF3BB92426E8F200912A14 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BB82426E8F200912A14 /* ImagePicker.swift */; };
+		B2EF3BC02426EED800912A14 /* ContactMapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BBB2426EED800912A14 /* ContactMapPresenter.swift */; };
+		B2EF3BC12426EED800912A14 /* ContactMapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BBC2426EED800912A14 /* ContactMapRouter.swift */; };
+		B2EF3BC22426EED800912A14 /* ContactMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BBD2426EED800912A14 /* ContactMapViewController.swift */; };
+		B2EF3BC32426EED800912A14 /* ContactMapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BBE2426EED800912A14 /* ContactMapInteractor.swift */; };
+		B2EF3BC42426EED800912A14 /* ContactMapConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EF3BBF2426EED800912A14 /* ContactMapConfigurator.swift */; };
+		B2EF3BC62426EEE500912A14 /* ContactMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EF3BC52426EEE500912A14 /* ContactMapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +98,45 @@
 		B20CFC0824241FD600B9F5DD /* DatabaseStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseStorable.swift; sourceTree = "<group>"; };
 		B2B9DF332421869300E11ECF /* LocationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWorker.swift; sourceTree = "<group>"; };
 		B2B9DF3624218D5D00E11ECF /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		B2EF3B6F2426C40300912A14 /* ToSPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSPresenter.swift; sourceTree = "<group>"; };
+		B2EF3B702426C40300912A14 /* ToSRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSRouter.swift; sourceTree = "<group>"; };
+		B2EF3B712426C40300912A14 /* ToSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSViewController.swift; sourceTree = "<group>"; };
+		B2EF3B722426C40300912A14 /* ToSInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSInteractor.swift; sourceTree = "<group>"; };
+		B2EF3B732426C40300912A14 /* ToSConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToSConfigurator.swift; sourceTree = "<group>"; };
+		B2EF3B792426C41500912A14 /* ToSViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToSViewController.xib; sourceTree = "<group>"; };
+		B2EF3B7D2426C5CE00912A14 /* Baloo2-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo2-Bold.ttf"; sourceTree = "<group>"; };
+		B2EF3B7E2426C5CE00912A14 /* Baloo2-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo2-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B2EF3B7F2426C5CE00912A14 /* Baloo2-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo2-SemiBold.ttf"; sourceTree = "<group>"; };
+		B2EF3B802426C5CE00912A14 /* Baloo2-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo2-Medium.ttf"; sourceTree = "<group>"; };
+		B2EF3B812426C5CE00912A14 /* Baloo2-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Baloo2-Regular.ttf"; sourceTree = "<group>"; };
+		B2EF3B882426C85B00912A14 /* MainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		B2EF3B8B2426CCC800912A14 /* LocationRequestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequestPresenter.swift; sourceTree = "<group>"; };
+		B2EF3B8C2426CCC800912A14 /* LocationRequestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequestRouter.swift; sourceTree = "<group>"; };
+		B2EF3B8D2426CCC800912A14 /* LocationRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequestViewController.swift; sourceTree = "<group>"; };
+		B2EF3B8E2426CCC800912A14 /* LocationRequestInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequestInteractor.swift; sourceTree = "<group>"; };
+		B2EF3B8F2426CCC800912A14 /* LocationRequestConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRequestConfigurator.swift; sourceTree = "<group>"; };
+		B2EF3B952426CCDF00912A14 /* LocationRequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationRequestViewController.xib; sourceTree = "<group>"; };
+		B2EF3B982426D29000912A14 /* QuarantineMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarantineMapPresenter.swift; sourceTree = "<group>"; };
+		B2EF3B992426D29000912A14 /* QuarantineMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarantineMapRouter.swift; sourceTree = "<group>"; };
+		B2EF3B9A2426D29000912A14 /* QuarantineMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarantineMapViewController.swift; sourceTree = "<group>"; };
+		B2EF3B9B2426D29000912A14 /* QuarantineMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarantineMapInteractor.swift; sourceTree = "<group>"; };
+		B2EF3B9C2426D29000912A14 /* QuarantineMapConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuarantineMapConfigurator.swift; sourceTree = "<group>"; };
+		B2EF3BA22426D29E00912A14 /* QuarantineMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuarantineMapViewController.xib; sourceTree = "<group>"; };
+		B2EF3BA52426D54E00912A14 /* Infections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Infections.swift; sourceTree = "<group>"; };
+		B2EF3BA82426DCD900912A14 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		B2EF3BAB2426E52C00912A14 /* ReportPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportPresenter.swift; sourceTree = "<group>"; };
+		B2EF3BAC2426E52C00912A14 /* ReportRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportRouter.swift; sourceTree = "<group>"; };
+		B2EF3BAD2426E52C00912A14 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		B2EF3BAE2426E52C00912A14 /* ReportInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportInteractor.swift; sourceTree = "<group>"; };
+		B2EF3BAF2426E52C00912A14 /* ReportConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportConfigurator.swift; sourceTree = "<group>"; };
+		B2EF3BB52426E53B00912A14 /* ReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportViewController.xib; sourceTree = "<group>"; };
+		B2EF3BB82426E8F200912A14 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B2EF3BBB2426EED800912A14 /* ContactMapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMapPresenter.swift; sourceTree = "<group>"; };
+		B2EF3BBC2426EED800912A14 /* ContactMapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMapRouter.swift; sourceTree = "<group>"; };
+		B2EF3BBD2426EED800912A14 /* ContactMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMapViewController.swift; sourceTree = "<group>"; };
+		B2EF3BBE2426EED800912A14 /* ContactMapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMapInteractor.swift; sourceTree = "<group>"; };
+		B2EF3BBF2426EED800912A14 /* ContactMapConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMapConfigurator.swift; sourceTree = "<group>"; };
+		B2EF3BC52426EEE500912A14 /* ContactMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactMapViewController.xib; sourceTree = "<group>"; };
 		E290AEC3A4339DD45CCC5049 /* Pods-coronatrace-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coronatrace-ios.release.xcconfig"; path = "Target Support Files/Pods-coronatrace-ios/Pods-coronatrace-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -146,6 +224,11 @@
 		8FF2477F242145090089A09F = {
 			isa = PBXGroup;
 			children = (
+				B2EF3BBA2426EEB100912A14 /* Contact Map */,
+				B2EF3BAA2426E18600912A14 /* Report */,
+				B2EF3B972426D0F600912A14 /* Quarantine Map */,
+				B2EF3B8A2426CCAB00912A14 /* Location Request */,
+				B2EF3B6E2426C3D800912A14 /* Terms of Service */,
 				8F69DAD52423FC6700E1056E /* Database */,
 				8F69DAD32423FC2A00E1056E /* Location */,
 				8F34FD5C24214F8100C0F0F5 /* Generated */,
@@ -169,6 +252,7 @@
 		8FF2478A242145090089A09F /* coronatrace-ios */ = {
 			isa = PBXGroup;
 			children = (
+				B2EF3B7B2426C5BA00912A14 /* Resources */,
 				8FF2478B242145090089A09F /* AppDelegate.swift */,
 				8FF247942421450A0089A09F /* Assets.xcassets */,
 				8FF247962421450A0089A09F /* LaunchScreen.storyboard */,
@@ -191,6 +275,9 @@
 		B2B9DF312421865D00E11ECF /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B2EF3BB72426E8E500912A14 /* Controllers */,
+				B2EF3BA72426DCCD00912A14 /* Extenions */,
+				B2EF3B872426C83B00912A14 /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -209,6 +296,124 @@
 				B2B9DF3624218D5D00E11ECF /* LocationModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B2EF3B6E2426C3D800912A14 /* Terms of Service */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3B6F2426C40300912A14 /* ToSPresenter.swift */,
+				B2EF3B702426C40300912A14 /* ToSRouter.swift */,
+				B2EF3B712426C40300912A14 /* ToSViewController.swift */,
+				B2EF3B722426C40300912A14 /* ToSInteractor.swift */,
+				B2EF3B732426C40300912A14 /* ToSConfigurator.swift */,
+				B2EF3B792426C41500912A14 /* ToSViewController.xib */,
+			);
+			path = "Terms of Service";
+			sourceTree = "<group>";
+		};
+		B2EF3B7B2426C5BA00912A14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3B7C2426C5C500912A14 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B2EF3B7C2426C5C500912A14 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3B7D2426C5CE00912A14 /* Baloo2-Bold.ttf */,
+				B2EF3B7E2426C5CE00912A14 /* Baloo2-ExtraBold.ttf */,
+				B2EF3B802426C5CE00912A14 /* Baloo2-Medium.ttf */,
+				B2EF3B812426C5CE00912A14 /* Baloo2-Regular.ttf */,
+				B2EF3B7F2426C5CE00912A14 /* Baloo2-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B2EF3B872426C83B00912A14 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3B882426C85B00912A14 /* MainButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B2EF3B8A2426CCAB00912A14 /* Location Request */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3B8B2426CCC800912A14 /* LocationRequestPresenter.swift */,
+				B2EF3B8C2426CCC800912A14 /* LocationRequestRouter.swift */,
+				B2EF3B8D2426CCC800912A14 /* LocationRequestViewController.swift */,
+				B2EF3B8E2426CCC800912A14 /* LocationRequestInteractor.swift */,
+				B2EF3B8F2426CCC800912A14 /* LocationRequestConfigurator.swift */,
+				B2EF3B952426CCDF00912A14 /* LocationRequestViewController.xib */,
+			);
+			path = "Location Request";
+			sourceTree = "<group>";
+		};
+		B2EF3B972426D0F600912A14 /* Quarantine Map */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3BA42426D53F00912A14 /* Enums */,
+				B2EF3B982426D29000912A14 /* QuarantineMapPresenter.swift */,
+				B2EF3B992426D29000912A14 /* QuarantineMapRouter.swift */,
+				B2EF3B9A2426D29000912A14 /* QuarantineMapViewController.swift */,
+				B2EF3B9B2426D29000912A14 /* QuarantineMapInteractor.swift */,
+				B2EF3B9C2426D29000912A14 /* QuarantineMapConfigurator.swift */,
+				B2EF3BA22426D29E00912A14 /* QuarantineMapViewController.xib */,
+			);
+			path = "Quarantine Map";
+			sourceTree = "<group>";
+		};
+		B2EF3BA42426D53F00912A14 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3BA52426D54E00912A14 /* Infections.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		B2EF3BA72426DCCD00912A14 /* Extenions */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3BA82426DCD900912A14 /* UIImage.swift */,
+			);
+			path = Extenions;
+			sourceTree = "<group>";
+		};
+		B2EF3BAA2426E18600912A14 /* Report */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3BAB2426E52C00912A14 /* ReportPresenter.swift */,
+				B2EF3BAC2426E52C00912A14 /* ReportRouter.swift */,
+				B2EF3BAD2426E52C00912A14 /* ReportViewController.swift */,
+				B2EF3BAE2426E52C00912A14 /* ReportInteractor.swift */,
+				B2EF3BAF2426E52C00912A14 /* ReportConfigurator.swift */,
+				B2EF3BB52426E53B00912A14 /* ReportViewController.xib */,
+			);
+			path = Report;
+			sourceTree = "<group>";
+		};
+		B2EF3BB72426E8E500912A14 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3BB82426E8F200912A14 /* ImagePicker.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B2EF3BBA2426EEB100912A14 /* Contact Map */ = {
+			isa = PBXGroup;
+			children = (
+				B2EF3BBB2426EED800912A14 /* ContactMapPresenter.swift */,
+				B2EF3BBC2426EED800912A14 /* ContactMapRouter.swift */,
+				B2EF3BBD2426EED800912A14 /* ContactMapViewController.swift */,
+				B2EF3BBE2426EED800912A14 /* ContactMapInteractor.swift */,
+				B2EF3BBF2426EED800912A14 /* ContactMapConfigurator.swift */,
+				B2EF3BC52426EEE500912A14 /* ContactMapViewController.xib */,
+			);
+			path = "Contact Map";
 			sourceTree = "<group>";
 		};
 		EB15B9DA41B2522115B34031 /* Frameworks */ = {
@@ -280,10 +485,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2EF3BC62426EEE500912A14 /* ContactMapViewController.xib in Resources */,
+				B2EF3B852426C5DE00912A14 /* Baloo2-Regular.ttf in Resources */,
+				B2EF3B822426C5DE00912A14 /* Baloo2-Bold.ttf in Resources */,
 				8F34FD5A24214D4600C0F0F5 /* README.md in Resources */,
+				B2EF3B962426CCDF00912A14 /* LocationRequestViewController.xib in Resources */,
+				B2EF3B842426C5DE00912A14 /* Baloo2-Medium.ttf in Resources */,
 				8FF247982421450A0089A09F /* LaunchScreen.storyboard in Resources */,
+				B2EF3B7A2426C41500912A14 /* ToSViewController.xib in Resources */,
 				8FF247952421450A0089A09F /* Assets.xcassets in Resources */,
 				8F34FD6024214FB400C0F0F5 /* Dashboard.storyboard in Resources */,
+				B2EF3BA32426D29E00912A14 /* QuarantineMapViewController.xib in Resources */,
+				B2EF3B862426C5DE00912A14 /* Baloo2-SemiBold.ttf in Resources */,
+				B2EF3B832426C5DE00912A14 /* Baloo2-ExtraBold.ttf in Resources */,
+				B2EF3BB62426E53B00912A14 /* ReportViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,23 +573,52 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F69DAE02424006D00E1056E /* DBLocationWorker.swift in Sources */,
+				B2EF3B9E2426D29000912A14 /* QuarantineMapRouter.swift in Sources */,
+				B2EF3BB42426E52C00912A14 /* ReportConfigurator.swift in Sources */,
+				B2EF3BB92426E8F200912A14 /* ImagePicker.swift in Sources */,
+				B2EF3B9D2426D29000912A14 /* QuarantineMapPresenter.swift in Sources */,
 				8F34FD39242149BE00C0F0F5 /* DashboardActions.swift in Sources */,
 				8F34FD3F242149BE00C0F0F5 /* DashboardConfigurator.swift in Sources */,
 				8F69DAD92423FC9000E1056E /* DBLocationModel.swift in Sources */,
+				B2EF3B782426C40300912A14 /* ToSConfigurator.swift in Sources */,
+				B2EF3BA12426D29000912A14 /* QuarantineMapConfigurator.swift in Sources */,
 				8F34FD3D242149BE00C0F0F5 /* DashboardViewController.swift in Sources */,
 				8FF2478C242145090089A09F /* AppDelegate.swift in Sources */,
+				B2EF3BA62426D54E00912A14 /* Infections.swift in Sources */,
+				B2EF3BC22426EED800912A14 /* ContactMapViewController.swift in Sources */,
 				B20CFC0924241FD600B9F5DD /* DatabaseStorable.swift in Sources */,
 				8F34FD3E242149BE00C0F0F5 /* DashboardInteractor.swift in Sources */,
 				8F34FD5224214A7200C0F0F5 /* MainRouter.swift in Sources */,
+				B2EF3BB22426E52C00912A14 /* ReportViewController.swift in Sources */,
+				B2EF3B942426CCC800912A14 /* LocationRequestConfigurator.swift in Sources */,
 				8F69DADC2423FD9300E1056E /* DatabaseWorker.swift in Sources */,
+				B2EF3BB12426E52C00912A14 /* ReportRouter.swift in Sources */,
 				B2B9DF342421869300E11ECF /* LocationWorker.swift in Sources */,
+				B2EF3BC32426EED800912A14 /* ContactMapInteractor.swift in Sources */,
+				B2EF3B922426CCC800912A14 /* LocationRequestViewController.swift in Sources */,
 				8F34FD3C242149BE00C0F0F5 /* DashboardRouter.swift in Sources */,
 				8F34FD3B242149BE00C0F0F5 /* DashboardWorker.swift in Sources */,
+				B2EF3BC02426EED800912A14 /* ContactMapPresenter.swift in Sources */,
+				B2EF3B772426C40300912A14 /* ToSInteractor.swift in Sources */,
+				B2EF3B9F2426D29000912A14 /* QuarantineMapViewController.swift in Sources */,
+				B2EF3B912426CCC800912A14 /* LocationRequestRouter.swift in Sources */,
+				B2EF3BC42426EED800912A14 /* ContactMapConfigurator.swift in Sources */,
+				B2EF3B752426C40300912A14 /* ToSRouter.swift in Sources */,
 				8F34FD3A242149BE00C0F0F5 /* DashboardPresenter.swift in Sources */,
 				B2B9DF3724218D5D00E11ECF /* LocationModel.swift in Sources */,
 				8F34FD5E24214F8100C0F0F5 /* R.generated.swift in Sources */,
+				B2EF3BC12426EED800912A14 /* ContactMapRouter.swift in Sources */,
+				B2EF3B762426C40300912A14 /* ToSViewController.swift in Sources */,
+				B2EF3B902426CCC800912A14 /* LocationRequestPresenter.swift in Sources */,
+				B2EF3BB02426E52C00912A14 /* ReportPresenter.swift in Sources */,
+				B2EF3BB32426E52C00912A14 /* ReportInteractor.swift in Sources */,
+				B2EF3B892426C85B00912A14 /* MainButton.swift in Sources */,
+				B2EF3BA02426D29000912A14 /* QuarantineMapInteractor.swift in Sources */,
+				B2EF3B742426C40300912A14 /* ToSPresenter.swift in Sources */,
 				8F34FD5524214A7200C0F0F5 /* MainConfigurator.swift in Sources */,
+				B2EF3BA92426DCD900912A14 /* UIImage.swift in Sources */,
 				8F69DADE2424004D00E1056E /* DBModel.swift in Sources */,
+				B2EF3B932426CCC800912A14 /* LocationRequestInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,13 +756,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HS3Y569RQW;
 				INFOPLIST_FILE = "coronatrace-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "pl.coronatrace.coronatrace-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.coronatrace.coronatrace-ios1";
 				PRODUCT_NAME = Coronatrace;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,13 +776,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HS3Y569RQW;
 				INFOPLIST_FILE = "coronatrace-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "pl.coronatrace.coronatrace-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.coronatrace.coronatrace-ios1";
 				PRODUCT_NAME = Coronatrace;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

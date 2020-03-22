@@ -15,7 +15,7 @@ final class MainRouter {
     
     init(window: UIWindow?) {
         self.window = window
-        showDashboard()
+        showToS()
     }
 }
 
@@ -25,5 +25,11 @@ private extension MainRouter {
     func showDashboard() {
         let dashboard = DashboardConfigurator().configureDashboardModule()
         window?.rootViewController = dashboard
+    }
+    
+    func showToS() {
+        let tos = ToSConfigurator.configureToSModule()
+        let nvc = UINavigationController(rootViewController: tos)
+        window?.rootViewController = nvc
     }
 }

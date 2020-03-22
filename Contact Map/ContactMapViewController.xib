@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-ExtraBold.ttf">
+            <string>Baloo2-ExtraBold</string>
+        </array>
+        <array key="Baloo2-SemiBold.ttf">
+            <string>Baloo2-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactMapViewController" customModule="Coronatrace" customModuleProvider="target">
+            <connections>
+                <outlet property="map" destination="Lij-TF-x7W" id="DV0-eK-Ecg"/>
+                <outlet property="mapContainer" destination="4KU-VQ-m92" id="tEb-2d-rDO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="fbz-Sf-wzg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4KU-VQ-m92">
+                    <rect key="frame" x="16" y="93" width="382" height="693.5"/>
+                    <subviews>
+                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Lij-TF-x7W">
+                            <rect key="frame" x="8" y="8" width="366" height="677.5"/>
+                        </mapView>
+                    </subviews>
+                    <color key="backgroundColor" name="background-secondary"/>
+                    <constraints>
+                        <constraint firstItem="Lij-TF-x7W" firstAttribute="leading" secondItem="4KU-VQ-m92" secondAttribute="leading" constant="8" id="C6s-dC-MdR"/>
+                        <constraint firstAttribute="bottom" secondItem="Lij-TF-x7W" secondAttribute="bottom" constant="8" id="SDZ-lN-nkD"/>
+                        <constraint firstItem="Lij-TF-x7W" firstAttribute="top" secondItem="4KU-VQ-m92" secondAttribute="top" constant="8" id="YUf-JJ-JNV"/>
+                        <constraint firstAttribute="trailing" secondItem="Lij-TF-x7W" secondAttribute="trailing" constant="8" id="qiz-d0-n3O"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UWAGA!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7M-C4-gHh">
+                    <rect key="frame" x="0.0" y="44" width="414" height="33"/>
+                    <fontDescription key="fontDescription" name="Baloo2-ExtraBold" family="Baloo 2" pointSize="28"/>
+                    <color key="textColor" name="font-primary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UWAGA! Prawdopodobnie miałeś kontakt z nosicielem wirusa. Skontaktuj się ze służbami sanitarnymi" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="531-9A-FUB">
+                    <rect key="frame" x="16" y="802.5" width="382" height="59.5"/>
+                    <fontDescription key="fontDescription" name="Baloo2-SemiBold" family="Baloo 2" pointSize="17"/>
+                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" name="background-primary"/>
+            <constraints>
+                <constraint firstItem="531-9A-FUB" firstAttribute="top" secondItem="4KU-VQ-m92" secondAttribute="bottom" constant="16" id="0i9-Ms-t4o"/>
+                <constraint firstItem="4KU-VQ-m92" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="4Tm-Lf-TbX"/>
+                <constraint firstItem="C7M-C4-gHh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7qq-AW-SIp"/>
+                <constraint firstItem="531-9A-FUB" firstAttribute="top" secondItem="4KU-VQ-m92" secondAttribute="bottom" constant="16" id="CB5-gI-aId"/>
+                <constraint firstItem="531-9A-FUB" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Lcv-G7-214"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4KU-VQ-m92" secondAttribute="trailing" constant="16" id="WQC-AN-jUB"/>
+                <constraint firstItem="531-9A-FUB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bta-2S-vlt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="531-9A-FUB" secondAttribute="trailing" constant="16" id="eJ1-Pk-1nw"/>
+                <constraint firstItem="C7M-C4-gHh" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="imB-fZ-Wnk"/>
+                <constraint firstItem="C7M-C4-gHh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="tTu-Ex-PCp"/>
+                <constraint firstItem="4KU-VQ-m92" firstAttribute="top" secondItem="C7M-C4-gHh" secondAttribute="bottom" constant="16" id="vqy-Ah-25b"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background-primary">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background-secondary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="font-primary">
+            <color red="0.31764705882352939" green="0.34509803921568627" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

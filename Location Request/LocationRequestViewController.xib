@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-ExtraBold.ttf">
+            <string>Baloo2-ExtraBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocationRequestViewController" customModule="Coronatrace" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="Xwr-Mm-9iR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dostęp do lokalizacji" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijf-FW-Icd">
+                    <rect key="frame" x="0.0" y="44" width="375" height="32.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Baloo2-ExtraBold" family="Baloo 2" pointSize="28"/>
+                    <color key="textColor" name="font-primary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W celu korzystania z aplikacji potrzebujemy stałego dostępu do Twojej lokalizacji. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q05-1P-wFC">
+                    <rect key="frame" x="0.0" y="92.666666666666671" width="375" height="37.333333333333329"/>
+                    <fontDescription key="fontDescription" name="Baloo2-ExtraBold" family="Baloo 2" pointSize="16"/>
+                    <color key="textColor" name="font-secondary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" name="background-primary"/>
+            <constraints>
+                <constraint firstItem="Ijf-FW-Icd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="SRn-8p-tqU"/>
+                <constraint firstItem="Ijf-FW-Icd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="V6a-HK-z86"/>
+                <constraint firstItem="Q05-1P-wFC" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="bn4-zw-PFb"/>
+                <constraint firstItem="Q05-1P-wFC" firstAttribute="top" secondItem="Ijf-FW-Icd" secondAttribute="bottom" constant="16" id="dCy-jt-FXz"/>
+                <constraint firstItem="Q05-1P-wFC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="h4k-QX-QKr"/>
+                <constraint firstItem="Ijf-FW-Icd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="wSK-fi-y9N"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background-primary">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="font-primary">
+            <color red="0.31764705882352939" green="0.34509803921568627" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="font-secondary">
+            <color red="0.80392156862745101" green="0.81568627450980391" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

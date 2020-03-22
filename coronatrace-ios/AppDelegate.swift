@@ -22,6 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        setupNavigationBar()
+        
         let window = UIWindow(frame: UIScreen.main.bounds)
         let main = MainConfigurator().configureMainModule(with: window)
         
@@ -29,9 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         application.setMinimumBackgroundFetchInterval(UIApplication.backgroundFetchIntervalMinimum)
-        
-        //This line below is temporary here, until we figure out flow for authorization request
-        locationWorker.requestAuthorization()
         
         return true
     }
@@ -52,5 +51,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             completionHandler(.newData)
         }
+    }
+}
+
+private extension AppDelegate {
+    func setupNavigationBar() {
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().backgroundColor = .clear
+        UINavigationBar.appearance().isTranslucent = true
     }
 }

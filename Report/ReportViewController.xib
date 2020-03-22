@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-ExtraBold.ttf">
+            <string>Baloo2-ExtraBold</string>
+        </array>
+        <array key="Baloo2-Regular.ttf">
+            <string>Baloo2-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReportViewController" customModule="Coronatrace" customModuleProvider="target">
+            <connections>
+                <outlet property="image" destination="VIo-HX-E3y" id="3U5-vU-Rem"/>
+                <outlet property="imageContainerView" destination="z46-TI-ZEG" id="4Re-Oa-8Qs"/>
+                <outlet property="view" destination="iN0-l3-epB" id="UnN-Oe-fDH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z46-TI-ZEG">
+                    <rect key="frame" x="16" y="92.666666666666686" width="343" height="563.33333333333326"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.on.rectangle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Dbd-2y-UYw">
+                            <rect key="frame" x="120" y="230.66666666666663" width="103" height="102.33333333333337"/>
+                            <color key="tintColor" name="font-primary"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Dbd-2y-UYw" secondAttribute="height" id="OT5-12-Nbx"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VIo-HX-E3y">
+                            <rect key="frame" x="8" y="8" width="327" height="547.33333333333337"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" name="background-secondary"/>
+                    <constraints>
+                        <constraint firstItem="VIo-HX-E3y" firstAttribute="top" secondItem="z46-TI-ZEG" secondAttribute="top" constant="8" id="37s-pl-HsW"/>
+                        <constraint firstItem="VIo-HX-E3y" firstAttribute="leading" secondItem="z46-TI-ZEG" secondAttribute="leading" constant="8" id="74N-VU-fDF"/>
+                        <constraint firstItem="Dbd-2y-UYw" firstAttribute="centerX" secondItem="z46-TI-ZEG" secondAttribute="centerX" id="Ski-S5-fri"/>
+                        <constraint firstAttribute="bottom" secondItem="VIo-HX-E3y" secondAttribute="bottom" constant="8" id="UW4-k6-Zpr"/>
+                        <constraint firstItem="Dbd-2y-UYw" firstAttribute="width" secondItem="z46-TI-ZEG" secondAttribute="width" multiplier="0.3" id="c3L-wP-1np"/>
+                        <constraint firstAttribute="trailing" secondItem="VIo-HX-E3y" secondAttribute="trailing" constant="8" id="cgk-Mo-6NY"/>
+                        <constraint firstItem="Dbd-2y-UYw" firstAttribute="centerY" secondItem="z46-TI-ZEG" secondAttribute="centerY" id="rqB-UC-kNu"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zgłoś zarażenie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbF-gY-4S5">
+                    <rect key="frame" x="20" y="44" width="335" height="32.666666666666657"/>
+                    <fontDescription key="fontDescription" name="Baloo2-ExtraBold" family="Baloo 2" pointSize="28"/>
+                    <color key="textColor" name="font-primary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCK-uQ-Ieg">
+                    <rect key="frame" x="16" y="672" width="343" height="42"/>
+                    <string key="text">Prosimy, wyślij zdjęcie potwierdzenia, żebysmy potwierdzili prawdziwość zgłoszenia. Twoje dane będą trzymane tylko na potrzeby weryfikacji zgłoszeni i zostaną niezwłocznie usunięte</string>
+                    <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="12"/>
+                    <color key="textColor" name="font-primary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rkV-NE-H81" customClass="MainButton" customModule="Coronatrace" customModuleProvider="target">
+                    <rect key="frame" x="123.66666666666669" y="730" width="128" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="128" id="LLd-Gl-ZhN"/>
+                        <constraint firstAttribute="height" constant="48" id="ghg-xU-YuC"/>
+                    </constraints>
+                    <state key="normal" title="Wyślij"/>
+                    <connections>
+                        <action selector="send:" destination="-1" eventType="touchUpInside" id="3CY-o8-jhz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" name="background-primary"/>
+            <constraints>
+                <constraint firstItem="gCK-uQ-Ieg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="GyF-Lg-wVG"/>
+                <constraint firstItem="BbF-gY-4S5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="Hl5-tv-a20"/>
+                <constraint firstItem="rkV-NE-H81" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="PZ3-LH-Oyd"/>
+                <constraint firstItem="rkV-NE-H81" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RGd-wW-qkg"/>
+                <constraint firstItem="gCK-uQ-Ieg" firstAttribute="top" secondItem="z46-TI-ZEG" secondAttribute="bottom" constant="16" id="TcH-lt-zIF"/>
+                <constraint firstAttribute="trailing" secondItem="gCK-uQ-Ieg" secondAttribute="trailing" constant="16" id="WLF-ec-rBr"/>
+                <constraint firstItem="BbF-gY-4S5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XFn-qd-0fA"/>
+                <constraint firstAttribute="trailing" secondItem="BbF-gY-4S5" secondAttribute="trailing" constant="20" symbolic="YES" id="YrM-tp-eB5"/>
+                <constraint firstItem="z46-TI-ZEG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="bGI-ph-hRU"/>
+                <constraint firstAttribute="trailing" secondItem="z46-TI-ZEG" secondAttribute="trailing" constant="16" id="fRf-xa-zcV"/>
+                <constraint firstItem="z46-TI-ZEG" firstAttribute="top" secondItem="BbF-gY-4S5" secondAttribute="bottom" constant="16" id="nhF-c0-gXa"/>
+                <constraint firstItem="rkV-NE-H81" firstAttribute="top" secondItem="gCK-uQ-Ieg" secondAttribute="bottom" constant="16" id="ybl-Ly-dSj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.95566502463055"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="photo.on.rectangle" catalog="system" width="64" height="48"/>
+        <namedColor name="background-primary">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background-secondary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="font-primary">
+            <color red="0.31764705882352939" green="0.34509803921568627" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

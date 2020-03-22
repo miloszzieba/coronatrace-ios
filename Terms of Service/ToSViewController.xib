@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Baloo2-ExtraBold.ttf">
+            <string>Baloo2-ExtraBold</string>
+        </array>
+        <array key="Baloo2-Regular.ttf">
+            <string>Baloo2-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToSViewController" customModule="Coronatrace" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="2jr-gw-Rfi" id="1QS-Ag-NTV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="j1k-Lr-Spp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Regulamin i Polityka Prywatności" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsa-30-RoT">
+                    <rect key="frame" x="0.0" y="43.999999999999993" width="375" height="65.333333333333314"/>
+                    <fontDescription key="fontDescription" name="Baloo2-ExtraBold" family="Baloo 2" pointSize="28"/>
+                    <color key="textColor" name="font-primary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2jr-gw-Rfi">
+                    <rect key="frame" x="16" y="125.33333333333331" width="343" height="544.66666666666674"/>
+                    <color key="backgroundColor" name="background-secondary"/>
+                    <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacinia, eros a consectetur egestas, lacus ante rutrum nibh, sed porttitor tellus tortor id tortor. Duis ut efficitur ante. Nullam non convallis mi. Suspendisse potenti. Curabitur non imperdiet lacus. Curabitur luctus purus mauris. Praesent pellentesque a urna a maximus. Nulla volutpat quam nulla, quis pretium dui laoreet sit amet. Aliquam et viverra urna. Integer efficitur consectetur odio sed laoreet. Nullam consectetur finibus efficitur. Nullam in pharetra velit. Mauris accumsan aliquet leo, vel pretium libero malesuada id.
+
+Mauris eu quam posuere, dictum nulla quis, efficitur mauris. Cras finibus vel purus ut laoreet. Sed nec elit in orci varius dignissim. Vestibulum aliquet fringilla massa non feugiat. Donec velit massa, facilisis a purus a, placerat condimentum nisi. Donec aliquam et nisl eget rhoncus. Praesent ac lectus vel ipsum gravida congue ac eu diam. Cras cursus sapien quis tristique gravida. Sed aliquam sed turpis sed mattis. Aliquam in laoreet arcu. Duis sit amet tristique arcu, sit amet facilisis purus.
+
+Nunc sit amet enim vel velit egestas suscipit nec sit amet velit. In vulputate quam vitae libero pretium, in finibus purus cursus. Aliquam iaculis sagittis dictum. Nullam quis accumsan tellus. Etiam elementum, massa sed imperdiet dictum, nibh lectus ornare sem, a suscipit lacus nisi ut metus. Morbi semper tristique neque, in hendrerit nisi ullamcorper sit amet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus non mattis libero, eu finibus purus. Duis a velit in odio euismod bibendum. Vivamus neque magna, tincidunt sed sapien in, tincidunt dictum ligula. Proin in aliquam erat. Vivamus elementum ultricies ligula sit amet luctus. Sed facilisis tellus et commodo auctor. Integer cursus dolor sit amet purus commodo euismod. Fusce id risus laoreet, pretium augue quis, pulvinar mi. In sodales nunc sed augue porta fermentum.
+
+In hac habitasse platea dictumst. Vestibulum sed metus nisi. Nulla venenatis accumsan dolor, eget posuere velit tempus eget. Integer bibendum arcu metus, sit amet tempor arcu ultrices vitae. Sed imperdiet nulla sed nibh vulputate, accumsan pellentesque lacus convallis. Suspendisse ut iaculis dui, ut luctus arcu. Suspendisse potenti. Sed iaculis faucibus mattis.
+
+Nam aliquam sollicitudin nisl, id mattis tellus iaculis ut. Nullam vitae finibus orci. Pellentesque id lobortis purus. Sed viverra elit ut blandit iaculis. Cras sit amet imperdiet diam. Curabitur id congue massa, et vestibulum urna. Phasellus eget mattis erat. Donec vitae eros in augue convallis blandit. Maecenas venenatis libero ac velit laoreet rhoncus. Aenean congue porta nisl vitae convallis.
+
+Praesent velit magna, pretium vitae nulla molestie, convallis ultricies est. Ut molestie urna maximus, dapibus neque id, ultrices ex. Curabitur ac placerat enim. Nullam non elementum dolor, at pretium enim. Vivamus venenatis risus in magna consectetur, sit amet facilisis turpis suscipit. Etiam ullamcorper ipsum id sem tempus, a congue leo viverra. Phasellus in diam pharetra, dictum tellus vitae, laoreet ante. Suspendisse lacinia nisi dolor, hendrerit mattis ante ornare ac. Fusce vel justo vel nunc lobortis porttitor sed non elit. Ut egestas consectetur quam, non vulputate diam elementum ac. Curabitur accumsan fermentum sapien, in scelerisque arcu vulputate id. Nulla ultrices felis ut accumsan consequat.
+
+Pellentesque sit amet ex ut nunc tincidunt congue. Quisque non nisi sit amet lectus volutpat malesuada sit amet vitae massa. Sed orci nibh, fermentum vitae enim in, mattis hendrerit ex. In ut velit nisi. Nullam et tortor quis sem blandit mollis. Ut faucibus porta commodo. Fusce ac vulputate sem. Phasellus venenatis quis nibh eget pharetra. Nulla arcu eros, auctor non placerat eu, tristique et mauris. Fusce et orci quam. Aenean tincidunt, quam in dictum aliquet, felis ante luctus nisi, sit amet vestibulum magna odio quis velit.
+
+Morbi sit amet lorem tortor. Fusce mattis magna sit amet urna aliquet rhoncus. Cras aliquet lectus eu est dapibus, ut mollis justo cursus. Vestibulum non neque fringilla, finibus erat non, pellentesque sapien. Aliquam erat volutpat. Nulla venenatis dolor at elementum scelerisque. Donec pretium urna vitae posuere dictum. Nullam malesuada rhoncus purus, nec euismod elit accumsan at. Cras convallis augue sed mi sagittis, eget congue mauris dictum. Maecenas vel ante mi.
+
+Pellentesque at fringilla nisl. Proin viverra tellus eu volutpat efficitur. Phasellus condimentum nibh in fermentum accumsan. Nullam lacinia sem id orci sagittis auctor. Morbi eget ante nec neque interdum dictum id non leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed ante lorem. Donec tempus nisl ut odio laoreet, quis pellentesque eros maximus. Donec tincidunt in sem sit amet aliquet. Mauris egestas aliquet ipsum a viverra.
+
+Sed a rutrum orci. Donec lacinia ex in lectus bibendum, non egestas quam consequat. Maecenas volutpat sagittis vestibulum. Quisque eu augue finibus, dictum risus a, rutrum magna. Nullam porttitor sem non justo gravida semper. Nullam auctor imperdiet porttitor. Nam efficitur massa eu tempor maximus. Vestibulum vel lorem quam. Integer egestas, erat nec tincidunt imperdiet, ante lacus posuere ligula, sit amet interdum est velit sed tellus.</mutableString>
+                    <color key="textColor" name="font-primary"/>
+                    <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dm7-zn-dmK" customClass="MainButton" customModule="Coronatrace" customModuleProvider="target">
+                    <rect key="frame" x="123.66666666666669" y="730" width="128" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Ofe-fx-4Oe"/>
+                        <constraint firstAttribute="width" constant="128" id="if8-et-a7f"/>
+                    </constraints>
+                    <state key="normal" title="Akceptuj"/>
+                    <connections>
+                        <action selector="accept:" destination="-1" eventType="touchUpInside" id="EfD-dE-F8V"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oświadczam, że zapoznałem się i akceptuję regulamin i politykę prywatności" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZx-iH-VF9">
+                    <rect key="frame" x="0.0" y="686" width="375" height="28"/>
+                    <fontDescription key="fontDescription" name="Baloo2-Regular" family="Baloo 2" pointSize="12"/>
+                    <color key="textColor" name="font-primary"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" name="background-primary"/>
+            <constraints>
+                <constraint firstItem="dm7-zn-dmK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="14h-P1-elc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VZx-iH-VF9" secondAttribute="trailing" id="43x-H2-aEH"/>
+                <constraint firstItem="dm7-zn-dmK" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="4dH-C1-2am"/>
+                <constraint firstItem="2jr-gw-Rfi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="7ZX-Yp-Rz7"/>
+                <constraint firstItem="dm7-zn-dmK" firstAttribute="top" secondItem="VZx-iH-VF9" secondAttribute="bottom" constant="16" id="9zp-XD-RgA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2jr-gw-Rfi" secondAttribute="trailing" constant="16" id="Cbo-1x-1sf"/>
+                <constraint firstItem="nsa-30-RoT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="EBa-LU-bJn"/>
+                <constraint firstItem="nsa-30-RoT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="SH5-hM-0TC"/>
+                <constraint firstItem="VZx-iH-VF9" firstAttribute="top" secondItem="2jr-gw-Rfi" secondAttribute="bottom" constant="16" id="lD9-ZB-tbF"/>
+                <constraint firstItem="VZx-iH-VF9" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ltG-eo-ENH"/>
+                <constraint firstItem="2jr-gw-Rfi" firstAttribute="top" secondItem="nsa-30-RoT" secondAttribute="bottom" constant="16" id="qf2-fS-fng"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="nsa-30-RoT" secondAttribute="trailing" id="rBf-TA-sAJ"/>
+                <constraint firstItem="VZx-iH-VF9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yay-a5-Wj3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="88.799999999999997" y="152.95566502463055"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background-primary">
+            <color red="0.93333333333333335" green="0.93333333333333335" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background-secondary">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="font-primary">
+            <color red="0.31764705882352939" green="0.34509803921568627" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

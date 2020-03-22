@@ -32,7 +32,7 @@ final class LocationWorker: NSObject, LocationWorkerProtocol {
     private enum Constants {
         static let minimumAccuracy: CLLocationAccuracy = 50.0
         static let backgroundFetchRequestTimeout: TimeInterval = 10.0
-        static let newLocationThrottle: TimeInterval = 60.0 * 5.0
+        static let newLocationThrottle: TimeInterval = 60.0 * 0.5
     }
     
     enum LocationWorkerError: Error {
@@ -120,7 +120,7 @@ private extension LocationWorker {
         locationManager.allowsBackgroundLocationUpdates = true
         locationManager.pausesLocationUpdatesAutomatically = false
         
-        locationManager.startUpdatingLocation()
+//        locationManager.startUpdatingLocation()
     }
     
     func setupSystemLifecycleObservers() {
@@ -138,11 +138,21 @@ private extension LocationWorker {
     }
     
     @objc func appMovedToBackground() {
-        locationManager.startMonitoringSignificantLocationChanges()
+        switch CLLocationManager.authorizationStatus() {
+        case .authorizedAlways, .authorizedWhenInUse:
+            locationManager.startMonitoringSignificantLocationChanges()
+        default:
+            return
+        }
     }
     
     @objc func appMovedToForeground() {
-        locationManager.startUpdatingLocation()
+        switch CLLocationManager.authorizationStatus() {
+        case .authorizedAlways, .authorizedWhenInUse:
+            locationManager.startUpdatingLocation()
+        default:
+            return
+        }
     }
     
     @objc func backgroundFetchRequestTimeout(_ timer: Timer) {
